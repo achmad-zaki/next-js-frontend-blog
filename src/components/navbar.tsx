@@ -1,18 +1,19 @@
 'use client'
 
 import Link from "next/link";
-import { Button } from "./ui/button";
 import SearchInput from "./search-input";
 import { PencilLine, Search } from "lucide-react";
 import Logo from "@/assets/icons/logo";
+import Notification from "./notification";
+import Account from "./account";
 
 export default function Navbar() {
     return (
-        <header className="p-5 bg-white border-b">
+        <header className="p-5 bg-white border-b fixed top-0 w-full">
             <div className="max-w-6xl mx-auto">
                 <div className="flex items-center justify-between">
                     {/* KIRI */}
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-8">
                         <Link
                             href="/"
                         >
@@ -30,34 +31,31 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    {/* KANAN */}
                     <div className="flex items-center gap-4">
-                        {/* Write button: hanya tampil di md ke atas */}
-                        <div className="hidden md:flex items-center gap-6 hover:underline">
-                            <button className="flex items-center gap-1 cursor-pointer text-gray-600">
+                        <div className="flex items-center gap-6 hover:underline">
+                            <button className="flex items-center gap-1 cursor-pointer text-gray-800">
                                 <PencilLine className="size-6" />
                                 <span className="text-sm">Write</span>
                             </button>
                         </div>
 
                         <SearchInput />
-                        {/* Sign In */}
-                        <Button asChild size='lg' className='rounded-full'>
+                        {/* <Button asChild size='lg' className='rounded-full'>
                             <Link
                                 href="/auth/login"
                             >
                                 Sign In
                             </Link>
                         </Button>
-
-                        {/* Sign Up: hanya tampil di md ke atas */}
                         <Button asChild size='lg' variant='secondary' className='rounded-full hidden md:flex'>
                             <Link
                                 href="/auth/register"
                             >
                                 Sign Up
                             </Link>
-                        </Button>
+                        </Button> */}
+                        <Notification />
+                        <Account />
                     </div>
                 </div>
             </div>

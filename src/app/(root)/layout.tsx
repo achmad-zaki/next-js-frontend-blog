@@ -5,7 +5,11 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     return (
         <Fragment>
             <Navbar />
-            {children}
+            <div className='pt-24 px-5'>
+                <div className='max-w-7xl ml-auto '>
+                    {children}
+                </div>
+            </div>
         </Fragment>
     )
 }

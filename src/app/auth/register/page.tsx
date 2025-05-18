@@ -9,13 +9,13 @@ export default function Register() {
         <div className="min-h-screen flex items-center justify-center bg-white relative px-4">
             {/* Card */}
             <div className="w-full max-w-md bg-white text-center">
-                <h1 className="text-3xl font-semibold mb-8">Join Us Today</h1>
+                <h1 className="text-3xl font-semibold mb-16">Join Us Today</h1>
 
                 {/* Form */}
                 <form className="space-y-4">
                     <Input icon={<User className="size-5" />} placeholder="username" />
                     <Input icon={<Mail className="size-5" />} placeholder="example@gmail.com" />
-                    <Input icon={<KeyRound className="size-5" />} placeholder="your password" />
+                    <Input icon={<KeyRound className="size-5" />} placeholder="your password" type="password" />
 
                     <Button type="button" size="lg" className="w-full">Sign Up</Button>
                 </form>

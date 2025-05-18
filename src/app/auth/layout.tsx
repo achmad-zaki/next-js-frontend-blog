@@ -1,9 +1,9 @@
-import { Fragment } from "react";
+import PageAnimation from "@/components/page-animation";
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
     return (
-        <Fragment>
+        <PageAnimation>
             {children}
-        </Fragment>
+        </PageAnimation>
     )
 }

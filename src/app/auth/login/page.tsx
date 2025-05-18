@@ -14,9 +14,9 @@ export default function Login() {
                 {/* Form */}
                 <form className="space-y-4">
                     <Input icon={<Mail className="size-5" />} placeholder="example@gmail.com" />
-                    <Input icon={<KeyRound className="size-5" />} placeholder="your password" />
+                    <Input icon={<KeyRound className="size-5" />} placeholder="your password" type="password" />
 
-                    <Button type="button" size="lg" className="w-full">Sign Up</Button>
+                    <Button type="button" size="lg" className="w-full">Sign In</Button>
                 </form>
 
                 {/* Divider */}
